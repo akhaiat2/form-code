@@ -7,6 +7,47 @@ html, body {
   padding: 0;
 }
 
+ .warningSign {
+ width: 90vw;
+ height: 90vh;
+ border: 1px solid #333;
+ font-size: 20px;
+ font-family: fantasy;
+ box-shadow: 8px 8px 5px #444;
+ padding: 8px 12px;
+ background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+ position: fixed;
+ z-index: 20;
+}
+
+h1, h2 {
+ color: #4B0082;
+}
+
+button {
+ display: inline-block;
+ padding: 15px 25px;
+ font-size: 24px;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ outline: none;
+ color: #fff;
+ background-color: #4B0082;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+ z-index: 11;
+} */
+
+button:hover {background-color: #3c0069}
+
+button:active {
+ background-color: #3c0069
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+
 canvas {
   display: block;
 }

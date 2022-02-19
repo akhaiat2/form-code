@@ -1,12 +1,18 @@
 let i = 0;
-let radius = 1;
+let radius = 1.0;
+//3D shapes with WEBGL + Canvas by p5.js
+
+function myFunction() {
+  document.getElementById("warningSign").style.display = "none";
+}
 
 function setup () {
   createCanvas(innerWidth, innerHeight, WEBGL);
-  background(0);
-  frameRate(random(15,60));
+  background(color(random(0,255), random(0,255), random(0,255)));
+  frameRate(random(10,60));
 }
 
+//drawing a torus using draw function p5.js + rotate + sin + cos
 function draw () {
   i+= 0.5;
   radius++;
@@ -18,5 +24,6 @@ function draw () {
   fill(c);
   rotateX(frameCount*0.001);
   rotateY(frameCount*0.001);
-  torus(x1,y1);
+  if (mouseIsPressed === true) cone(x1,y1);
+  else torus(x1,y1);
 }

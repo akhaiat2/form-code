@@ -8,7 +8,7 @@ function myFunction() {
 
 function setup () {
   createCanvas(innerWidth, innerHeight, WEBGL);
-  background(color(random(0,255), random(0,255), random(0,255)));
+  background(0);
   frameRate(random(10,60));
 }
 

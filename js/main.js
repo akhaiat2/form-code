@@ -59,6 +59,7 @@ function mouseReleased() {
 function keyPressed () {
   if (key == ' ') {
     frameRate(0);
+    saveCanvas('Canvas_By_Anthony_Khaiat', 'jpg')
   }
   else {
     frameRate(random(10,60));

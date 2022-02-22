@@ -25,9 +25,9 @@ canvas {
 }
 
 @keyframes mymove {
-  0% {left: 0vh;}
-  50% {left: 100vh;}
-  100% {left: 0vh;}
+  0% {left: 0%;}
+  50% {left: 70%;}
+  100% {left: 0%;}
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
   animation: mymove 8s infinite;
 }
 
-h2 {
+h2, h3, h4 {
  color: #4B0082;
 }
 

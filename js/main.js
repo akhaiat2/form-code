@@ -11,13 +11,12 @@ function setup () {
   createCanvas(innerWidth, innerHeight, WEBGL);
   background(0);
   frameRate(random(10,60));
+  let c = color(255,255,255);
 }
 
 //drawing a torus using draw function p5.js + rotate + sin + cos
 function draw () {
-  let c = color(255,255,255);
-  //let h = hour();
-  let h = 12;
+  let h = hour();
   i+= 0.5;
   radius++;
   let offsetX = width / 2;
@@ -47,4 +46,21 @@ function draw () {
   rotateX(frameCount*0.01);
   rotateY(frameCount*0.01);
   torus(x1,y1);
+}
+
+function mousePressed() {
+  frameRate(15);
+}
+
+function mouseReleased() {
+  frameRate(random(10,60));
+}
+
+function keyPressed () {
+  if (key == ' ') {
+    frameRate(0);
+  }
+  else {
+    frameRate(random(10,60));
+  }
 }

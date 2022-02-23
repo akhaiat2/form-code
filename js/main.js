@@ -1,6 +1,6 @@
 let i = 0;
 let radius = 1.0;
-
+let pauseState = false;
 //3D shapes with WEBGL + Canvas by p5.js
 
 function myFunction() {
@@ -58,11 +58,13 @@ function mouseReleased() {
 }
 
 function keyPressed () {
-  if (key == ' ') {
+  if (key == ' ' && pauseState == false) {
     frameRate(0);
-    saveCanvas('Canvas_By_Anthony_Khaiat', 'jpg')
+    saveCanvas('Canvas_By_Anthony_Khaiat', 'jpg');
+    pauseState = true;
   }
   else {
+    pauseState = false;
     frameRate(random(10,60));
   }
 }

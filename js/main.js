@@ -63,7 +63,7 @@ function keyPressed () {
     saveCanvas('Canvas_By_Anthony_Khaiat', 'jpg');
     pauseState = true;
   }
-  else {
+  else if (key == ' ' && pauseState == true') {
     pauseState = false;
     frameRate(random(10,60));
   }

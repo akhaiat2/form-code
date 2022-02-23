@@ -45,11 +45,12 @@ function draw () {
   fill(c);
   rotateX(frameCount*0.01);
   rotateY(frameCount*0.01);
+  orbitControl(2,2);
   torus(x1,y1);
 }
 
 function mousePressed() {
-  frameRate(15);
+  frameRate(20);
 }
 
 function mouseReleased() {

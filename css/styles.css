@@ -25,9 +25,9 @@ canvas {
 }
 
 @keyframes mymove {
-  0% {left: 0%;}
-  50% {left: 60%;}
-  100% {left: 0%;}
+  0% {left: 0vh;}
+  50% {left: 100vh;}
+  100% {left: 0vh;}
 }
 
 h1 {

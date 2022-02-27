@@ -32,14 +32,14 @@ function draw () {
     b = random(0,85);
   }
   else if ((h >= 6 && h < 8) || (h >= 16 && h < 19)) {
-    r = random(85, 170);
-    g = random(85, 170);
-    b = random(85, 170);
+    r = random(0, 170);
+    g = random(0, 170);
+    b = random(0, 170);
   }
   else {
-    r = random(170, 255);
-    g = random(170, 255);
-    b = random(170, 255);
+    r = random(0, 255);
+    g = random(0, 255);
+    b = random(0, 255);
   }
   c = color(r,g,b)
   fill(c);
@@ -63,7 +63,7 @@ function keyPressed () {
     saveCanvas('Canvas_By_Anthony_Khaiat', 'jpg');
     pauseState = true;
   }
-  else if (key == ' ' && pauseState == true') {
+  else if (key == ' ' && pauseState == true) {
     pauseState = false;
     frameRate(random(10,60));
   }
